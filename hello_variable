@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# A script that will print out a message from a variable
+
+hello_message='Hello, YOUTUBE!'
+current_dir=$(pwd)
+
+echo  "$hello_message from $current_dir"

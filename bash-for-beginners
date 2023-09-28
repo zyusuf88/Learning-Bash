@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# A script that will ask for a number and print out a message depending on the value. 
+
+read -p "Enter a value: " n
+case $n in
+    1|2) 
+        echo "One or two";;
+    [3-9]) 
+        echo "Number 3 through 9";;
+    ??) 
+        echo "Two characters";;
+    *.txt) 
+        echo "Ends with .txt";;
+    *) 
+        echo "Other";;
+esac
+    
